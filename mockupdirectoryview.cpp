@@ -23,9 +23,6 @@ MockupDirectoryView::MockupDirectoryView(QWidget *parent) : Peony::DirectoryView
 const QStringList MockupDirectoryView::getSelections()
 {
     QStringList l;
-    if (!m_content->ui->lineEdit->text().isEmpty()) {
-        l<<m_content->ui->lineEdit->text();
-    }
     return l;
 }
 
