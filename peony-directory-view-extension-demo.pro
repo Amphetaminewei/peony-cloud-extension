@@ -32,7 +32,7 @@ DISTFILES += peony-directory-view-extension-demo.json
 
 # Default rules for deployment.
 unix {
-    target.path = $$[QT_INSTALL_LIBS]/peony-extensions
+    target.path = /usr/lib/peony-qt-extensions
 }
 !isEmpty(target.path): INSTALLS += target
 
