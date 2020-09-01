@@ -22,7 +22,6 @@ MockupDirectoryViewContent::~MockupDirectoryViewContent()
 void MockupDirectoryViewContent::on_toolButton_clicked()
 {
     auto url = QFileDialog::getExistingDirectoryUrl();
-    ui->lineEdit->setText(url.url());
 }
 
 void MockupDirectoryViewContent::on_pushButton_clicked()
