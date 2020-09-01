@@ -19,23 +19,8 @@ MockupDirectoryViewContent::~MockupDirectoryViewContent()
     delete ui;
 }
 
-void MockupDirectoryViewContent::on_toolButton_clicked()
-{
-    auto url = QFileDialog::getExistingDirectoryUrl();
-}
-
-void MockupDirectoryViewContent::on_pushButton_clicked()
-{
-        m_view->menuRequest(QCursor::pos());
-}
-
 void MockupDirectoryViewContent::on_pushButton_2_clicked()
 {
     auto uri = "/usr/bin/";
         m_view->updateWindowLocationRequest(uri);
-}
-
-void MockupDirectoryViewContent::on_pushButton_3_clicked()
-{
-    m_view->viewDoubleClicked(uri);
 }
