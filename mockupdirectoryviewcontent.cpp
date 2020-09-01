@@ -27,24 +27,16 @@ void MockupDirectoryViewContent::on_toolButton_clicked()
 
 void MockupDirectoryViewContent::on_pushButton_clicked()
 {
-    auto uri = ui->lineEdit->text();
-    if (!uri.isEmpty()) {
         m_view->menuRequest(QCursor::pos());
-    }
 }
 
 void MockupDirectoryViewContent::on_pushButton_2_clicked()
 {
-    auto uri = ui->lineEdit->text();
-    if (!uri.isEmpty()) {
+    auto uri = "/usr/bin/";
         m_view->updateWindowLocationRequest(uri);
-    }
 }
 
 void MockupDirectoryViewContent::on_pushButton_3_clicked()
 {
-    auto uri = ui->lineEdit->text();
-    if (!uri.isEmpty()) {
-        m_view->viewDoubleClicked(uri);
-    }
+    m_view->viewDoubleClicked(uri);
 }
