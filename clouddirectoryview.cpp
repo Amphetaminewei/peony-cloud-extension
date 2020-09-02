@@ -1,7 +1,7 @@
-#include "mockupdirectoryview.h"
-#include "mockupdirectoryviewcontent.h"
+#include "clouddirectoryview.h"
+#include "clouddirectoryviewcontent.h"
 
-#include "ui_mockupdirectoryviewcontent.h"
+#include "ui_clouddirectoryview.h"
 
 #include <QHBoxLayout>
 

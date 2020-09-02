@@ -19,22 +19,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    mockdirectoryviewfactoryplugin.cpp \
-    mockupdirectoryview.cpp \
-    mockupdirectoryviewcontent.cpp
+    clouddirectoryview.cpp \
+    clouddirectoryviewcontent.cpp \
+    clouddirectoryviewfactoryplugin.cpp
 
 HEADERS += \
-    mockdirectoryviewfactoryplugin.h \
-    mockupdirectoryview.h \
-    mockupdirectoryviewcontent.h
+    clouddirectoryview.h \
+    clouddirectoryviewcontent.h \
+    clouddirectoryviewfactoryplugin.h
 
 DISTFILES += peony-directory-view-extension-demo.json
 
 # Default rules for deployment.
 unix {
-    target.path = /usr/lib/peony-qt-extensions
+    target.path = $$[QT_INSTALL_LIBS]/peony-extensions/
 }
 !isEmpty(target.path): INSTALLS += target
 
 FORMS += \
-    mockupdirectoryviewcontent.ui
+    clouddirectoryview.ui
+
+RESOURCES += \
+    cloud.qrc

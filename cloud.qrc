@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="cloud">
-    <file>cloud.png</file>
+    <file>img/icon-云存储@2x.png</file>
+    <file>img/icon-云存储.png</file>
   </qresource>
 </RCC>

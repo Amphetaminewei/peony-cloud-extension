@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>672</width>
+    <height>482</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,7 @@
       <widget class="QPushButton" name="pushButton_2">
        <property name="styleSheet">
         <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(46, 192, 236);</string>
+background-color: rgb(47, 179, 232);</string>
        </property>
        <property name="text">
         <string>同步文件</string>
@@ -74,7 +74,8 @@ background-color: rgb(46, 192, 236);</string>
    <item row="3" column="1">
     <widget class="QLabel" name="label">
      <property name="styleSheet">
-      <string notr="true">color: rgb(140, 140, 140);</string>
+      <string notr="true">color: rgb(89, 89, 89);
+font: 16pt &quot;Noto Sans CJK SC&quot;;</string>
      </property>
      <property name="text">
       <string>你可以使用同步文件，即时查看、编辑、分享您的云文件
@@ -134,12 +135,12 @@ background-color: rgb(46, 192, 236);</string>
      </property>
      <property name="minimumSize">
       <size>
-       <width>120</width>
-       <height>60</height>
+       <width>180</width>
+       <height>120</height>
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">image:url(:/cloud/cloud.png);</string>
+      <string notr="true">image:url(:/cloud/img/icon-云存储.png);</string>
      </property>
      <property name="text">
       <string/>
@@ -149,11 +150,11 @@ background-color: rgb(46, 192, 236);</string>
    <item row="2" column="1">
     <widget class="QLabel" name="label_2">
      <property name="styleSheet">
-      <string notr="true">font: 57 14pt &quot;Noto Sans CJK SC Medium&quot;;</string>
+      <string notr="true">font: 22pt &quot;Noto Sans CJK SC&quot;;
+color: rgba(38, 38, 38);</string>
      </property>
      <property name="text">
-      <string>
-云存储</string>
+      <string>云存储</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

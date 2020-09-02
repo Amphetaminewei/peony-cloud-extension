@@ -1,5 +1,5 @@
-#include "mockdirectoryviewfactoryplugin.h"
-#include "mockupdirectoryview.h"
+#include "clouddirectoryviewfactoryplugin.h"
+#include "clouddirectoryview.h"
 
 MockDirectoryViewFactoryPlugin::MockDirectoryViewFactoryPlugin(QObject *parent)
     : Peony::DirectoryViewPluginIface2()

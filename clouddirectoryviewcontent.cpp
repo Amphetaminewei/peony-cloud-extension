@@ -1,7 +1,7 @@
-#include "mockupdirectoryviewcontent.h"
-#include "ui_mockupdirectoryviewcontent.h"
+#include "clouddirectoryviewcontent.h"
+#include "ui_clouddirectoryview.h"
 
-#include "mockupdirectoryview.h"
+#include "clouddirectoryview.h"
 
 #include <QFileDialog>
 
@@ -21,6 +21,6 @@ MockupDirectoryViewContent::~MockupDirectoryViewContent()
 
 void MockupDirectoryViewContent::on_pushButton_2_clicked()
 {
-    auto uri = "/usr/bin/";
+    auto uri = "/home/";
         m_view->updateWindowLocationRequest(uri);
 }
