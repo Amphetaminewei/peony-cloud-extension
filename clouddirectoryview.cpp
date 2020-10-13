@@ -7,10 +7,10 @@
 
 #include <QTimer>
 
-MockupDirectoryView::MockupDirectoryView(QWidget *parent) : Peony::DirectoryViewWidget(parent)
+CloudDirectoryView::CloudDirectoryView(QWidget *parent) : Peony::DirectoryViewWidget(parent)
 {
     auto layout = new QHBoxLayout;
-    auto content = new MockupDirectoryViewContent(this);
+    auto content = new CloudDirectoryViewContent(this);
     m_content = content;
     layout->addWidget(content);
     setLayout(layout);
@@ -20,13 +20,13 @@ MockupDirectoryView::MockupDirectoryView(QWidget *parent) : Peony::DirectoryView
     QTimer::singleShot(1000, this, &DirectoryViewWidget::viewDirectoryChanged);
 }
 
-const QStringList MockupDirectoryView::getSelections()
+const QStringList CloudDirectoryView::getSelections()
 {
     QStringList l;
     return l;
 }
 
-void MockupDirectoryView::bindModel(Peony::FileItemModel *model, Peony::FileItemProxyFilterSortModel *proxyModel)
+void CloudDirectoryView::bindModel(Peony::FileItemModel *model, Peony::FileItemProxyFilterSortModel *proxyModel)
 {
-    // do nothing, because mockup is not a 'real' vfs.
+    // do nothing, because cloud is not a 'real' vfs.
 }

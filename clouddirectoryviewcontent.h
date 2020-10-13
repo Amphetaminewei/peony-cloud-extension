@@ -1,31 +1,31 @@
-#ifndef MOCKUPDIRECTORYVIEWCONTENT_H
-#define MOCKUPDIRECTORYVIEWCONTENT_H
+#ifndef CLOUDDIRECTORYVIEWCONTENT_H
+#define CLOUDDIRECTORYVIEWCONTENT_H
 
 #include <QWidget>
 
-class MockupDirectoryView;
+class CloudDirectoryView;
 
 namespace Ui {
-class MockupDirectoryViewContent;
+class CloudDirectoryViewContent;
 }
 
-class MockupDirectoryViewContent : public QWidget
+class CloudDirectoryViewContent : public QWidget
 {
-    friend class MockupDirectoryView;
+    friend class CloudDirectoryView;
     Q_OBJECT
 
 public:
-    explicit MockupDirectoryViewContent(MockupDirectoryView *parent = nullptr);
-    ~MockupDirectoryViewContent();
+    explicit CloudDirectoryViewContent(CloudDirectoryView *parent = nullptr);
+    ~CloudDirectoryViewContent();
 
 private slots:
     void on_pushButton_2_clicked();
 
 
 private:
-    Ui::MockupDirectoryViewContent *ui;
+    Ui::CloudDirectoryViewContent *ui;
 
-    MockupDirectoryView *m_view;
+    CloudDirectoryView *m_view;
 };
 
-#endif // MOCKUPDIRECTORYVIEWCONTENT_H
+#endif // CLOUDDIRECTORYVIEWCONTENT_H

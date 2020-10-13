@@ -1,0 +1,13 @@
+Package: peony-directory-cloud-extension-dbgsym
+Package-Type: ddeb
+Source: peony-directory-cloud-extension
+Version: 1.0.1-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: wangweinan <wangweinan@kylinos.cn>
+Installed-Size: 362
+Depends: peony-directory-cloud-extension (= 1.0.1-2)
+Section: debug
+Priority: optional
+Description: debug symbols for peony-directory-cloud-extension
+Build-Ids: 7730693f0e7f2e764bb45f0fad558e4b6e27dd07

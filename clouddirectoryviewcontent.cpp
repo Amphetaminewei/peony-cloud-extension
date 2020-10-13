@@ -5,21 +5,21 @@
 
 #include <QFileDialog>
 
-MockupDirectoryViewContent::MockupDirectoryViewContent(MockupDirectoryView *parent) :
+CloudDirectoryViewContent::CloudDirectoryViewContent(CloudDirectoryView *parent) :
     QWidget(parent),
-    ui(new Ui::MockupDirectoryViewContent)
+    ui(new Ui::CloudDirectoryViewContent)
 {
     ui->setupUi(this);
 
     m_view = parent;
 }
 
-MockupDirectoryViewContent::~MockupDirectoryViewContent()
+CloudDirectoryViewContent::~CloudDirectoryViewContent()
 {
     delete ui;
 }
 
-void MockupDirectoryViewContent::on_pushButton_2_clicked()
+void CloudDirectoryViewContent::on_pushButton_2_clicked()
 {
     auto uri = "/home/";
         m_view->updateWindowLocationRequest(uri);

@@ -1,89 +1,89 @@
 #include "clouddirectoryviewfactoryplugin.h"
 #include "clouddirectoryview.h"
 
-MockDirectoryViewFactoryPlugin::MockDirectoryViewFactoryPlugin(QObject *parent)
+CloudViewFactoryPlugin::CloudViewFactoryPlugin(QObject *parent)
     : Peony::DirectoryViewPluginIface2()
 {
 }
 
-Peony::PluginInterface::PluginType MockDirectoryViewFactoryPlugin::pluginType()
+Peony::PluginInterface::PluginType CloudViewFactoryPlugin::pluginType()
 {
     return Peony::PluginInterface::DirectoryViewPlugin2;
 }
 
-const QString MockDirectoryViewFactoryPlugin::name()
+const QString CloudViewFactoryPlugin::name()
 {
-    return "Mock Directory View";
+    return "Cloud View";
 }
 
-const QString MockDirectoryViewFactoryPlugin::description()
+const QString CloudViewFactoryPlugin::description()
 {
-    return "A directory view plugin demo";
+    return "Peony cloud plugin";
 }
 
-const QIcon MockDirectoryViewFactoryPlugin::icon()
+const QIcon CloudViewFactoryPlugin::icon()
 {
     return QIcon::fromTheme("folder");
 }
 
-void MockDirectoryViewFactoryPlugin::setEnable(bool enable)
+void CloudViewFactoryPlugin::setEnable(bool enable)
 {
 
 }
 
-bool MockDirectoryViewFactoryPlugin::isEnable()
+bool CloudViewFactoryPlugin::isEnable()
 {
     return true;
 }
 
-QString MockDirectoryViewFactoryPlugin::viewIdentity()
+QString CloudViewFactoryPlugin::viewIdentity()
 {
     return name();
 }
 
-QString MockDirectoryViewFactoryPlugin::viewName()
+QString CloudViewFactoryPlugin::viewName()
 {
     return name();
 }
 
-QIcon MockDirectoryViewFactoryPlugin::viewIcon()
+QIcon CloudViewFactoryPlugin::viewIcon()
 {
     return icon();
 }
 
-bool MockDirectoryViewFactoryPlugin::supportUri(const QString &uri)
+bool CloudViewFactoryPlugin::supportUri(const QString &uri)
 {
-    return uri == "mockup:///";
+    return uri == "cloud:///";
 }
 
-int MockDirectoryViewFactoryPlugin::zoom_level_hint()
-{
-    return -1;
-}
-
-int MockDirectoryViewFactoryPlugin::minimumSupportedZoomLevel()
+int CloudViewFactoryPlugin::zoom_level_hint()
 {
     return -1;
 }
 
-int MockDirectoryViewFactoryPlugin::maximumSupportedZoomLevel()
+int CloudViewFactoryPlugin::minimumSupportedZoomLevel()
 {
     return -1;
 }
 
-int MockDirectoryViewFactoryPlugin::priority(const QString &directoryUri)
+int CloudViewFactoryPlugin::maximumSupportedZoomLevel()
+{
+    return -1;
+}
+
+int CloudViewFactoryPlugin::priority(const QString &directoryUri)
 {
     if (supportUri(directoryUri))
         return 999;
     return -999;
 }
 
-bool MockDirectoryViewFactoryPlugin::supportZoom()
+bool CloudViewFactoryPlugin::supportZoom()
 {
     return false;
 }
 
-Peony::DirectoryViewWidget *MockDirectoryViewFactoryPlugin::create()
+Peony::DirectoryViewWidget *CloudViewFactoryPlugin::create()
 {
-    return new MockupDirectoryView;
+    return new CloudDirectoryView;
 }

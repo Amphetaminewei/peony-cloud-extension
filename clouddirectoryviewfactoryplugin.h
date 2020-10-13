@@ -1,16 +1,16 @@
-#ifndef MOCKDIRECTORYVIEWFACTORYPLUGIN_H
-#define MOCKDIRECTORYVIEWFACTORYPLUGIN_H
+#ifndef CLOUDVIEWFACTORYPLUGIN_H
+#define CLOUDVIEWFACTORYPLUGIN_H
 
 #include <peony-qt/directory-view-plugin-iface2.h>
 
-class MockDirectoryViewFactoryPlugin : public QObject,  public Peony::DirectoryViewPluginIface2
+class CloudViewFactoryPlugin : public QObject,  public Peony::DirectoryViewPluginIface2
 {
     Q_OBJECT
     Q_PLUGIN_METADATA(IID DirectoryViewPluginIface2_iid FILE "peony-directory-view-extension-demo.json")
     Q_INTERFACES(Peony::DirectoryViewPluginIface2)
 
 public:
-    explicit MockDirectoryViewFactoryPlugin(QObject *parent = nullptr);
+    explicit CloudViewFactoryPlugin(QObject *parent = nullptr);
 
 private:
     // Peony::PluginIface need override
@@ -37,4 +37,4 @@ private:
     virtual Peony::DirectoryViewWidget *create() override;
 };
 
-#endif // MOCKDIRECTORYVIEWFACTORYPLUGIN_H
+#endif // CLOUDVIEWFACTORYPLUGIN_H

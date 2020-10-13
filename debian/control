@@ -1,0 +1,15 @@
+Source: peony-directory-cloud-extension
+Section: utils
+Priority: optional
+Maintainer: wangweinan <wangweinan@kylinos.cn>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.1
+Homepage: https://www.ukui.org/
+#Vcs-Browser: https://salsa.debian.org/debian/peony-directory-cloud-extension
+#Vcs-Git: https://salsa.debian.org/debian/peony-directory-cloud-extension.git
+
+Package: peony-directory-cloud-extension
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

@@ -1,0 +1,11 @@
+Package: peony-directory-cloud-extension
+Version: 1.0.1-2
+Architecture: amd64
+Maintainer: wangweinan <wangweinan@kylinos.cn>
+Installed-Size: 91
+Depends: libc6 (>= 2.4), libgcc-s1 (>= 3.0), libpeony3 (>= 3.0.2), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.7.0) | libqt5gui5-gles (>= 5.7.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 4.1.1)
+Section: utils
+Priority: optional
+Homepage: https://www.ukui.org/
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

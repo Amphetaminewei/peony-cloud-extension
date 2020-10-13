@@ -1,0 +1,17 @@
+peony-directory-cloud-extension (1.0.1-1013) v101; urgency=medium
+
+  * Modify uri and description.
+
+ -- wangweinan <wangweinan@kylinos.cn>  Wed, 13 Oct 2020 14:40:16 +0800
+
+peony-directory-cloud-extension (1.0.1-2) v101; urgency=medium
+
+  * Add cloud icon.
+
+ -- wangweinan <wangweinan@kylinos.cn>  Wed, 02 Sep 2020 14:40:16 +0800
+
+peony-directory-cloud-extension (1.0.1-1) v101; urgency=medium
+
+  * Add cloud extension.
+
+ -- wangweinan <wangweinan@kylinos.cn>  Wed, 02 Sep 2020 14:40:16 +0800
