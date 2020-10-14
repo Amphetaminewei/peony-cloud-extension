@@ -5,7 +5,7 @@
 
 #include <QFileDialog>
 
-CloudDirectoryViewContent::CloudDirectoryViewContent(CloudDirectoryView *parent) :
+CloudDirectoryViewContent::CloudDirectoryViewContent(Peony::CloudDirectoryView *parent) :
     QWidget(parent),
     ui(new Ui::CloudDirectoryViewContent)
 {

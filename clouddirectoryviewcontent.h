@@ -3,6 +3,8 @@
 
 #include <QWidget>
 
+#include "clouddirectoryview.h"
+
 class CloudDirectoryView;
 
 namespace Ui {
@@ -15,17 +17,17 @@ class CloudDirectoryViewContent : public QWidget
     Q_OBJECT
 
 public:
-    explicit CloudDirectoryViewContent(CloudDirectoryView *parent = nullptr);
+    explicit CloudDirectoryViewContent(Peony::CloudDirectoryView *parent = nullptr);
     ~CloudDirectoryViewContent();
 
-private slots:
+private Q_SLOTS:
     void on_pushButton_2_clicked();
 
 
 private:
     Ui::CloudDirectoryViewContent *ui;
 
-    CloudDirectoryView *m_view;
+    Peony::CloudDirectoryView *m_view;
 };
 
 #endif // CLOUDDIRECTORYVIEWCONTENT_H

@@ -2,6 +2,7 @@
 #define CLOUDVIEWFACTORYPLUGIN_H
 
 #include <peony-qt/directory-view-plugin-iface2.h>
+namespace Peony {
 
 class CloudViewFactoryPlugin : public QObject,  public Peony::DirectoryViewPluginIface2
 {
@@ -37,4 +38,5 @@ private:
     virtual Peony::DirectoryViewWidget *create() override;
 };
 
+}
 #endif // CLOUDVIEWFACTORYPLUGIN_H

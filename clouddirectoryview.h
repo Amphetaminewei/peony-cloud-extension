@@ -5,6 +5,8 @@
 
 class CloudDirectoryViewContent;
 
+namespace Peony {
+
 class CloudDirectoryView : public Peony::DirectoryViewWidget
 {
     friend class CloudDirectoryViewContent;
@@ -24,6 +26,13 @@ public:
 
 private:
     CloudDirectoryViewContent *m_content;
+
+public Q_SLOTS:
+    // location, fix blocking when forbid forbid thumbnailing in cloud plugin
+    virtual void setDirectoryUri(const QString &uri) {}
+    virtual void beginLocationChange();
+    virtual void stopLocationChange();
 };
 
+}
 #endif // CLOUDDIRECTORYVIEW_H

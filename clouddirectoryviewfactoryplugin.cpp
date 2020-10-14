@@ -1,89 +1,89 @@
 #include "clouddirectoryviewfactoryplugin.h"
 #include "clouddirectoryview.h"
 
-CloudViewFactoryPlugin::CloudViewFactoryPlugin(QObject *parent)
+Peony::CloudViewFactoryPlugin::CloudViewFactoryPlugin(QObject *parent)
     : Peony::DirectoryViewPluginIface2()
 {
 }
 
-Peony::PluginInterface::PluginType CloudViewFactoryPlugin::pluginType()
+Peony::PluginInterface::PluginType Peony::CloudViewFactoryPlugin::pluginType()
 {
     return Peony::PluginInterface::DirectoryViewPlugin2;
 }
 
-const QString CloudViewFactoryPlugin::name()
+const QString Peony::CloudViewFactoryPlugin::name()
 {
     return "Cloud View";
 }
 
-const QString CloudViewFactoryPlugin::description()
+const QString Peony::CloudViewFactoryPlugin::description()
 {
     return "Peony cloud plugin";
 }
 
-const QIcon CloudViewFactoryPlugin::icon()
+const QIcon Peony::CloudViewFactoryPlugin::icon()
 {
     return QIcon::fromTheme("folder");
 }
 
-void CloudViewFactoryPlugin::setEnable(bool enable)
+void Peony::CloudViewFactoryPlugin::setEnable(bool enable)
 {
 
 }
 
-bool CloudViewFactoryPlugin::isEnable()
+bool Peony::CloudViewFactoryPlugin::isEnable()
 {
     return true;
 }
 
-QString CloudViewFactoryPlugin::viewIdentity()
+QString Peony::CloudViewFactoryPlugin::viewIdentity()
 {
     return name();
 }
 
-QString CloudViewFactoryPlugin::viewName()
+QString Peony::CloudViewFactoryPlugin::viewName()
 {
     return name();
 }
 
-QIcon CloudViewFactoryPlugin::viewIcon()
+QIcon Peony::CloudViewFactoryPlugin::viewIcon()
 {
     return icon();
 }
 
-bool CloudViewFactoryPlugin::supportUri(const QString &uri)
+bool Peony::CloudViewFactoryPlugin::supportUri(const QString &uri)
 {
     return uri == "cloud:///";
 }
 
-int CloudViewFactoryPlugin::zoom_level_hint()
+int Peony::CloudViewFactoryPlugin::zoom_level_hint()
 {
     return -1;
 }
 
-int CloudViewFactoryPlugin::minimumSupportedZoomLevel()
+int Peony::CloudViewFactoryPlugin::minimumSupportedZoomLevel()
 {
     return -1;
 }
 
-int CloudViewFactoryPlugin::maximumSupportedZoomLevel()
+int Peony::CloudViewFactoryPlugin::maximumSupportedZoomLevel()
 {
     return -1;
 }
 
-int CloudViewFactoryPlugin::priority(const QString &directoryUri)
+int Peony::CloudViewFactoryPlugin::priority(const QString &directoryUri)
 {
     if (supportUri(directoryUri))
         return 999;
     return -999;
 }
 
-bool CloudViewFactoryPlugin::supportZoom()
+bool Peony::CloudViewFactoryPlugin::supportZoom()
 {
     return false;
 }
 
-Peony::DirectoryViewWidget *CloudViewFactoryPlugin::create()
+Peony::DirectoryViewWidget* Peony::CloudViewFactoryPlugin::create()
 {
     return new CloudDirectoryView;
 }
